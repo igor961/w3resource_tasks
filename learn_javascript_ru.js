@@ -9,6 +9,7 @@ window.onload = () => {
 
   tree.addEventListener('click', e=>{
     var el = e.target.nextSibling;
+    if (el == null) return;
     if (el.style.display == 'none') el.style.display = 'block'
     else el.style.display = 'none'
   })
